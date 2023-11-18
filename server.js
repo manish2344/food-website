@@ -15,7 +15,7 @@ app.get('/api',(req,res)=>{
 })
 app.use('/api/foods', foodRouter);
 app.use("/api/user", userRoute);
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
-  console.log('listening on port ' + PORT);
+// const PORT = process.env.PORT || 5000;
+app.listen(process.env.PORT, () => {
+  console.log('server started ');
 });
